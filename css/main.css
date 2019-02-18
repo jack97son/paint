@@ -1,0 +1,58 @@
+body {
+	background-color: #525252;
+    color: white;
+}
+
+canvas {
+	border:1px solid black;
+	background-color: white;
+	margin: 2%;
+	border-radius: 10px;
+	cursor: crosshair;
+}
+
+button {
+	width: 140px;
+	margin: auto
+}
+
+.mini-tools button {
+	width: 20px;
+}
+
+input[type="color" i] {
+	width: 20px;
+}
+
+.positions {
+	text-align: center;
+    font-size: 14px;
+    font-family: helvetica, arial;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.positions input {
+	width: 60px;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tools {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mini-tools	{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

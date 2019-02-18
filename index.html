@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tools">
+            <div class="mini-tools">
+                <div>    
+                    <label for="colorPick">Color</label>
+                    <input type="color" id="colorPick" value="#000000" onchange="colorPick()">
+                </div>
+            </div>
+            <div class="positions">
+                <h1>Create line</h1>
+                <div>
+                    <h3>coordinate 1</h3>
+                    <label for="cx-line1"> x</label>
+                    <input id="cx-line1" type="number">
+                    <label for="cy-line1"> y</label>
+                    <input id="cy-line1" type="number">
+                </div>
+                <div>
+                    <h3>coordinate 2</h3>
+                    <label for="cx-line2">x</label>
+                    <input id="cx-line2" type="number">
+                    <label for="cy-line2">y</label>
+                    <input id="cy-line2" type="number">
+                </div>
+                <button onclick="createLine()">Create Line</button>
+            </div>
+            <div class="positions">
+                <h1>Create Rectangle</h1>
+                <div>
+                    <h3>coordinate 1</h3>
+                    <label for="cx-rectangle1"> x</label>
+                    <input id="cx-rectangle1" type="number">
+                    <label for="cy-rectangle1"> y</label>
+                    <input id="cy-rectangle1" type="number">
+                </div>
+                <div>
+                    <h3>coordinate 2</h3>
+                    <label for="cx-rectangle2">x</label>
+                    <input id="cx-rectangle2" type="number">
+                    <label for="cy-rectangle2">y</label>
+                    <input id="cy-rectangle2" type="number">
+                </div>
+                <button onclick="createRectangle()">Create Rectangle</button>
+            </div>
+        </div>
+        <canvas id="canvas">
+            <!-- Lienzo -->
+        </canvas>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
